@@ -77,15 +77,13 @@
 
 \maketitle
 % If myabstract is defined, use it
-\ifx\myabstract\undefined
-\else
+\ifdefined\myabstract
 \begin{abstract}
 \input{\myabstract}
 \end{abstract}
 \fi
 
-\ifx\mykeywords\undefined
-\else
+\ifdefined\mykeywords
 \begin{IEEEkeywords}
 \mykeywords
 \end{IEEEkeywords}
